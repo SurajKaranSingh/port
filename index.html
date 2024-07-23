@@ -1,23 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MY PORTFOLIO</title>
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3770f6560d.js" crossorigin="anonymous"></script>
 </head>
-<body BGCOLOR=SKYBLUE>
-    <Pre><b><h1>            PROFILE            </h1></b></Pre>
-    <pre>                       <img src="/SurajKaranSingh.jpg" height='100'></pre>
-    <Pre><b><h1>            About Me            </h1></b></Pre>
 
-    <header>
-    <pre><a href="/education.html" target="_MAIN"><IMG SRC="/Education.jpg" HEIGHT='100'></a> <a href="/experience.html" TARGET="_MAIN"><IMG SRC="/EXPERIENCE.jpeg" HEIGHT='100'></a></pre>
-    </header>
-    <MAIN></MAIN>
-    <FOOTER>
-    <H5>CONTACT ME AT</H5>
-    <PRE><A href="https://www.instagram.com/un_professional_sketch_artist?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="TARGET="_MAIN"> <IMG SRC="/INSTAGRAM.jpeg" HEIGHT='20'></A></PRE>
-    <PRE><A href="https://www.linkedin.com/in/suraj-karan-singh-561a39250/" TARGET="_MAIN"> <IMG SRC="/LINKEDIN.png" HEIGHT='20'></A></PRE>
-    </FOOTER>
-    </body>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/logo.jpeg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="/#header">Home</a></li>
+                    <li><a href="/#about">About</a></li>
+                    <li><a href="/#projects">projects</a></li>
+                    <li><a href="/#portfolio">portfolio</a></li>
+                    <li><a href="/#contact">contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>WEB Designer</p>
+                <h2>Hi, I'm<br><span> Suraj Karan Singh </span><br> from Indore,INDIA</h2>
+            </div>
+        </div>
+    </div>
+    <!------------- about ------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/user.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h2 class="sub-title">About Me</h2>
+                    <p>I am dedicated hardworking person who’s never afraid of accepting challenges. I am a hardcore defence aspirant, an architectural sketch &  tech enthusiast and a wanderlust type of person which helps me to observe things and helps me execute the thing in best way I want. </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links " onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>WEB</span><br>Development</li>
+                            <li><span>language</span><br>C++</li>
+                            <li><span>SQL</span><br></li>
+                            <li><span>DSA</span><br>Data structure & algorithms</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2017-2018</span><br>Assistant Head boy at Sahara Public C.B.S.E School</li>
+                            <li><span>2023-Current</span><br>FOUNDER & HEAD of E-Cell at School of Computer Science & IT
+                                ,Davv </li>
+                            <li><span>2023-2024</span><br>Campuss Ambassador IIT Guwahati at School of Computer Science
+                                & IT, Davv</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2017</span><br>10th from Sahara Public C.B.S.E School,Kalapipal</li>
+                            <li><span>2019</span><br>12th from Scholars Academy, Shujalpur </li>
+                            <li><span>2022</span><br>B.Sc from K.K College of sc. & prof. Studies, Davv, Indore</li>
+                            <li><span>2023-2025</span><br>MCA from School of Computer Science & IT, Davv,Indore</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------services------------->
+    <div id="projects">
+        <div class="container">
+            <h2 class="sub-titles">MY Projects</h2>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Career Counselling</h3>
+                    <p>•	A guidance website to the 12 standard students which helps them to know about various streams they can opt for in graduation and postgraduation & can also connect to the person who can guide them. It will provide the links of official websites of the exams at one place so that they can get accurate info about the exams. </p>
+                    <a href="#">Learn more</a>
+
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h3>Real Estate Chatbot</h3>
+                    <p>It is a customized chatbot for real estate firm which helps them to resolve the query of the buyer and helps them to handle more customer in efficient way. </p>
+                    <a href="#">Learn more</a>
+
+                </div>
+
+            </div>
+            </h2>
+        </div>
+    </div>
+    <!-------------portfolio-------->
+    <div id="portfolio">
+        <div class="container">
+            <h2 class="sub-titles">My Work</h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/career counselling.png">
+                    <div class="layer">
+                        <h4>Career Counselling Website</h4>
+                        <p>This Website(work on process) will guide the student of class 12th to decide the fields which
+                            they can choose in graduation & post graduation and can get information of that through
+                            official sources and also talk through the people from that fields. </p>
+                        <a href="#"><i class="fa-duotone fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/chatbot.jpg">
+                    <div class="layer">
+                        <h4>Chatbot</h4>
+                        <p>This is a telegram Chatbot(initial phase done),it will guide the property buyer from Manthan
+                            Reality(real estae firm) in indore to see the property listing which helps them to purchase
+                            property by providing on ground reality without visiting & also helping manthan reality to
+                            managing & increasing visitore </p>
+                        <a href="#"><i class="fa-duotone fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-----------------contact------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row" id="idk">
+                <h2 class="sub-title" style="display: inline-block; margin:auto;">Contact Me </h2>
+                <div class="contact-left">
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>singhsurajkaran@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-phone"></i>+91 9039518021</p>
+                <div class="social-icons">
+                    <a href="/#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/_suraj_30_6ks02?igsh=MXV5cWU1bmdjeHNtdw=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/suraj-karan-singh-561a39250/"><i class="fa-brands fa-linkedin"></i></a>
+
+                </div>
+                <a href="image/Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right"></div>
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="your Name" required>
+                    <input type="email" name="Email" placeholder="your Email" required>
+                    <textarea name="Message" rows="6" placeholder="your Message"></textarea>
+                    <button type="submit" class="btn btn2" >Submit</button>
+                </form><br>
+                <span id="msg"></span>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Suraj <i class="fa-solid fa-heart"></i>. </p>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+
+    </script>
+    <script>
+        var sidemenu =document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right ="0"
+        }
+        function closemenu(){
+            sidemenu.style.right ="-200px"
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwKW6sHaGAmyn3XMkifH5Lf-aC3qzSANB411quF-CcKgLSKj5ghQK2vC0bublhF-HCC/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg =document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {msg.innerHTML ="Message sent successfully" 
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
 </html>
