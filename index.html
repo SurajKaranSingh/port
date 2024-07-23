@@ -7,6 +7,20 @@
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/3770f6560d.js" crossorigin="anonymous"></script>
+
+<style>
+    .hidden{
+        opacity: 0;
+        filter: blur(10px);
+        transform: translateX(-100%);
+        transition: all .3s ease-in-out;
+    }
+    .show{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0%);
+    }
+</style>
 </head>
 
 <body>
@@ -207,6 +221,25 @@
         })
             .catch(error => console.error('Error!', error.message))
         })
+
+
+
+const lund = document.querySelectorAll('div')
+    lund.forEach((el=>el.classList.add('hidden')));
+
+        const observer = new IntersectionObserver((ent)=>{
+            ent.forEach((en)=>{
+                if(en.isIntersecting){
+                    en.target.classList.add('show')
+                }
+                else{
+                    en.target.classList.remove('show')
+                }
+            })
+        });
+
+        const hidEl = document.querySelectorAll('.hidden')
+        hidEl.forEach((el=>observer.observe(el)));
       </script>
 </body>
 
